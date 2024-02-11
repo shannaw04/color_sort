@@ -1,0 +1,27 @@
+********************************************************************
+*                                                                  *
+*                   How to play Color Sort:                        *
+*                                                                  *
+*  You will be given bottles containing a mix of different colors. *
+*  Your objective is to sort the colors, so that the bottles       *
+*  contain only 1 color.                                           *
+*                                                                  *
+*  You can transfer blocks of color from one bottle to another if  *
+*  the destination bottle is empty, or if there is room available  *
+*  in the destination bottle and the top color of both bottles is  *
+*  the same.                                                       *
+*                                                                  *
+*  The level is complete when all of the colors have been sorted.  *
+*                                                                  *
+*  Game controls:                                                  *
+*  You may enter:                                                  *
+*    B1 B2 to make a move, where B1 is the number of the source    *
+*      bottle and B2 is the number of the destination bottle,      *
+*      separated by a space                                        *
+*    H to see instructions on how to play Color Sort               *
+*    R to reset the level                                          *
+*    Q to quit                                                     *
+*                                                                  *
+********************************************************************
+  
+
