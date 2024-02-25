@@ -1,10 +1,11 @@
 # Color Sort!
 Written by Shanna Wallace<br>
-Updated: 2/10/2024
+Updated: 2/25/2024
 
 This is a C++ implementation of a Color Sort game.<br>
 
-**This version of the game only prints in 1 color, so it will use letters instead of colors.**
+**This version of the game only prints in 1 color, so it will use letters instead of colors.**<br>
+I am currently working on a mobile app version of the game with classmates at UTK with an estimated completion date of April 15, 2024.
 
 ## What is Color Sort?
 Color Sort is a puzzle game that starts with blocks of various colors shuffled up in bottles. You are given 1 empty bottle if there are 2 or 3 colors to be sorted and 2 empty bottles if there are 4+ colors.<br>
@@ -54,13 +55,12 @@ The level_files directory contains directories with individual files for each le
 ## Game Input Files
 #### Level Data String:
 Color Sort will read level data from a one-line string in the following format: <br>
-num_colors num_blocks num_bottles bottles[0] bottles[1] ... bottles[last] <br>
-where num_colors is the number of colors in the level,
-num_blocks is the number of blocks of color per bottle, and 
-num_bottles is the number of bottles in the level. <br>
-It reads the color value (letter) for each block in the bottles, starting with the top-most block in the 1st bottle and ending with the bottom-most block in the last bottle. <br>
+num_bottles num_blocks bottles[0] bottles[1] ... bottles[last] <br>
+where num_bottles is the number of bottles in the level, and num_blocks is the number of blocks of color per bottle. <br>
+It reads the color value for each block in the bottles, starting with the top-most block in the 1st bottle and ending with the bottom-most block in the last bottle. <br>
+Color value of 0 indicates an empty block, 1 corresponds to the 1st color in the level, 2 corresponds to the 2nd color in the level. <br>
 For example, the level data string: <br> 
-2 4 3 B A B A A A B B - - - -  <br>
+3 4 2 1 2 1 1 1 2 2 0 0 0 0  <br>
 will give the following output:<br>
 ![initial state](instr_pics/initial.png)
 
