@@ -44,7 +44,7 @@ Generator::Generator(){
     num_blocks = 4;
     num_bottles = 0;
     
-    for (i = 1; i < max_colors; i++){
+    for (i = 1; i <= max_colors; i++){
         colors.push_back(i);
     }
 }
@@ -184,10 +184,11 @@ void Generator::print_level_data(ostream& stream){
 
     size_t i;
 
-    stream << num_bottles << endl << num_blocks << endl;
+    stream << num_bottles << " " << num_blocks << " ";
     for (i = 0; i < bottles.size(); i++){
-        stream << bottles[i] << endl;
+        stream << bottles[i] << " ";
     }
+    cout << endl;
 }
 
 
