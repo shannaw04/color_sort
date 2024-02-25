@@ -1,16 +1,16 @@
 CXX = g++
 CXXFLAGS = -Wall
-EXE = bin/play_1 bin/play bin/create_1_level bin/create_level_set 
+EXE = bin/play1 bin/play bin/create1 bin/create_set 
 
 all: $(EXE)
 
-bin/create_1_level: src/create_1_level.cpp src/Generator.cpp
+bin/create1: src/create1.cpp src/Generator.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-bin/create_level_set: src/create_level_set.cpp src/Generator.cpp 
+bin/create_set: src/create_set.cpp src/Generator.cpp 
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-bin/play_1: src/play_1.cpp src/ColorSort.cpp 
+bin/play1: src/play1.cpp src/ColorSort.cpp 
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 bin/play: src/play.cpp src/ColorSort.cpp
