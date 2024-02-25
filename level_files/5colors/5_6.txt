@@ -1,1 +1,0 @@
-5 4 7 A C B B D D D A C E E A D C A E B E C B - - - - - - - -
