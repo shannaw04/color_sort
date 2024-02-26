@@ -38,21 +38,32 @@ using namespace std;
  * level if they wish.
  * 
  * Parameters: const string &level. This string needs to be in the format: 
- *   num_colors, num_blocks, num_bottles each separated by a 
- *   space, then the color value for each bottle's blocks, starting 
- *   with the 1st bottle's top block and ending with the last bottle's 
- *   bottom block, each separated with a space. 
+ *   num_bottles, num_blocks, then the color value for each bottle's 
+ *   blocks, starting with the 1st bottle's top block and ending with the 
+ *   last bottle's bottom block, each value separated with a space. 
  * Returns: true if the level was loaded sucessfully. 
  *          false if the level could not be loaded */
 bool ColorSort::load_level(const string &level){
 
-    char color;
+    int color;
     int i;
     istringstream ss;
 
+    cout << "in load_level" << endl;
+
     ss.clear();
     ss.str(level);
-    ss >> num_colors >> num_blocks >> num_bottles;
+    ss >> num_bottles >> num_blocks;
+
+    cout << "read num_bottles and num_blocks" << endl;
+
+    if (num_bottles < 5){
+        num_colors = num_bottles - 1;
+    } else {
+        num_colors = num_bottles - 2;
+    }
+
+    cout << "num_bottles = " << num_bottles << "   num_blocks = " << num_blocks << "   num_colors = " << num_colors << endl;
 
     bottles.clear();
     while (ss >> color){
@@ -85,6 +96,8 @@ void ColorSort::print_bottles(){
     int i, j;
 	int index;
 
+    cout << "in print bottles" << endl;
+
     if (bottles.size() == 0){
         return;
     }
@@ -102,6 +115,7 @@ void ColorSort::print_bottles(){
 	for (i = 0; i < num_blocks; i++){
 		for (j = 0; j < num_bottles; j++){		
 			index = i + (j*num_blocks);
+            //cout << "| " << char(bottles[index] + 'A') << " |  ";
             cout << "| " << bottles[index] << " |  ";
 		}
         cout << endl;
@@ -145,7 +159,7 @@ void ColorSort::print_bottles(){
 bool ColorSort::make_move(int from, int to){
 
 	int i;             // Loop counter
-	char color;        // The color being moved (top color in "from")
+	int color;        // The color being moved (top color in "from")
 	int from_index;    // Index of the "from" bottle in the bottles vector
     int to_index;      // Index of the "to" bottle in the bottles vector
     int from_start;    // The index of the top block of color in "from", relative
@@ -167,14 +181,14 @@ bool ColorSort::make_move(int from, int to){
 
 	// Find the top color in the "from" bottle and number of 
     // consecutive blocks of that color
-	color = '-';
+	color = 0;
     consec_blocks = 1; 
 	for (i = 0; i < num_blocks; i++){
-        if (bottles[from_index + i] != '-'){
-            // If color was '-', then this is the top color
+        if (bottles[from_index + i] != 0){
+            // If color was 0, then this is the top color
             // Set color = this color. Save the index the color
             // starts at with from_start
-            if (color == '-'){
+            if (color == 0){
                 color = bottles[from_index + i];
                 from_start = i;
             
@@ -198,7 +212,7 @@ bool ColorSort::make_move(int from, int to){
 	for (i = 0; i < num_blocks; i++){
         // If the bottle isn't empty, check that its top color matches
         // the color being moved from "from"
-        if (bottles[to_index + i] != '-'){
+        if (bottles[to_index + i] != 0){
             if (bottles[to_index + i] != color){
                 return false;
             }
@@ -253,7 +267,7 @@ bool ColorSort::make_move(int from, int to){
 bool ColorSort::transfer_blocks(int from_index, int to_index, int blocks_to_move){
 
 	int i;
-    char color;
+    int color;
 
     if (blocks_to_move > num_blocks || blocks_to_move < 0){
         return false;
@@ -269,7 +283,7 @@ bool ColorSort::transfer_blocks(int from_index, int to_index, int blocks_to_move
 
 	for (i = 0; i < blocks_to_move; i++){
         color = bottles[from_index +  i];
-		bottles[from_index +  i] = '-';
+		bottles[from_index +  i] = 0;
 		bottles[to_index - i] = color;
 	}
 
@@ -289,7 +303,7 @@ bool ColorSort::transfer_blocks(int from_index, int to_index, int blocks_to_move
  *   false if the bottle is not full or color blocks do not match */
 bool ColorSort::bottle_complete(int bottle){
 
-	char color; // Color of the top block in the bottle
+	int color; // Color of the top block in the bottle
 	int index;  // Index of the bottle's top block in the bottles vector
 	int i;      // Used to iterate through bottle
 	
@@ -297,9 +311,9 @@ bool ColorSort::bottle_complete(int bottle){
     // vector indexes starting at 0
 	index = (bottle - 1) * num_blocks;
 	
-    // If the top color is '-', then the bottle is not full
+    // If the top color is 0, then the bottle is not full
 	color = bottles[index];
-	if (color == '-'){
+	if (color == 0){
 		return false;
 	}
 	
@@ -416,10 +430,10 @@ bool ColorSort::bottles_valid(int from, int to){
 
 	// Check that the bottle moving to isn't already full or that 
     // bottle moving from isn't empty
-	if (bottles[to] != '-'){
+	if (bottles[to] != 0){
 		return false;
 	}
-	if (bottles[from + (num_blocks - 1)] == '-'){
+	if (bottles[from + (num_blocks - 1)] == 0){
 		return false;
 	}
 
