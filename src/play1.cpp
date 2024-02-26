@@ -38,19 +38,26 @@ int main(int argc, char *argv[]) {
     string input;        // User's input
     int from, to;        // Number of bottles moving color from and to
     string level;        // String containing level data
-    ifstream level_file; // File to read input from
+    ifstream input_file; // File to read input from
     ColorSort *game = new ColorSort;  // Game
 
-    // Open file containing level data
+   
     if (argc != 2){
-        cerr << "Usage: " << argv[0] << " <level_file>\n";
+        cerr << "Usage: " << argv[0] << " <input_file>\n";
         return -1;
     }
 
-    level_file.open(argv[1]);
-    if (level_file.fail()){
+    // Open file with game data
+    input_file.open(argv[1]);
+    if (input_file.fail()){
         cerr << argv[1] << ": " << strerror(errno) << endl; 
         cerr << "Could not load game data.\n";
+        return -1;
+    }
+
+    getline(input_file, level);
+    if (level.length() < 8){
+        cerr << "Invalid level data.\n";
         return -1;
     }
 
@@ -59,13 +66,11 @@ int main(int argc, char *argv[]) {
         cerr << "Could not load level.\n";
         return -1;
     }
-    level_file.close();
+    input_file.close();
 
-    cout << "loaded the level." << endl;
     // Play level
     game->print_msg_file(WELCOME_MSG);
     while (game->level_complete() == false){
-        cout << "in the while loop" << endl;
         game->print_bottles();
         
         cin.clear();

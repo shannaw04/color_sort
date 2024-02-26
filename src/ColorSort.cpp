@@ -49,21 +49,15 @@ bool ColorSort::load_level(const string &level){
     int i;
     istringstream ss;
 
-    cout << "in load_level" << endl;
-
     ss.clear();
     ss.str(level);
     ss >> num_bottles >> num_blocks;
-
-    cout << "read num_bottles and num_blocks" << endl;
 
     if (num_bottles < 5){
         num_colors = num_bottles - 1;
     } else {
         num_colors = num_bottles - 2;
     }
-
-    cout << "num_bottles = " << num_bottles << "   num_blocks = " << num_blocks << "   num_colors = " << num_colors << endl;
 
     bottles.clear();
     while (ss >> color){
@@ -96,8 +90,6 @@ void ColorSort::print_bottles(){
     int i, j;
 	int index;
 
-    cout << "in print bottles" << endl;
-
     if (bottles.size() == 0){
         return;
     }
@@ -115,9 +107,12 @@ void ColorSort::print_bottles(){
 	for (i = 0; i < num_blocks; i++){
 		for (j = 0; j < num_bottles; j++){		
 			index = i + (j*num_blocks);
-            //cout << "| " << char(bottles[index] + 'A') << " |  ";
-            cout << "| " << bottles[index] << " |  ";
-		}
+            if (bottles[index] == 0){
+                cout << "| " << '-' << " |  ";
+            } else {
+                cout << "| " << char(bottles[index]+'A') << " |  ";
+            }
+        }
         cout << endl;
 	}
 
