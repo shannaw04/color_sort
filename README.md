@@ -1,6 +1,6 @@
 # Color Sort!
 Written by Shanna Wallace<br>
-Updated: 2/25/2024
+Updated: 2/26/2024
 
 This is a C++ implementation of a Color Sort game.<br>
 
@@ -8,7 +8,7 @@ This is a C++ implementation of a Color Sort game.<br>
 
 I am currently working on displaying the game state with actual colors using jgraph.<br>
 
-I am also working on a mobile app version of the game with classmates at UTK with an estimated completion date of April 15, 2024. Once the project is complete, I will be able to make those files public.
+I am also leading a project to develop a mobile app implementation of the game with classmates at UTK, with an estimated completion date of April 15, 2024. Once we've gotten the app finished up and submitted our final report on the project, I will be able to make the mobile app files public.
 
 ## What is Color Sort?
 Color Sort is a puzzle game that starts with blocks of various colors shuffled up in bottles. You are given 1 empty bottle if there are 2 or 3 colors to be sorted and 2 empty bottles if there are 4+ colors.<br>
