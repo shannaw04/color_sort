@@ -96,7 +96,7 @@ output_type: <br>
  input_file: Name of a file containing the instructions for the number of levels to create. 
 
 #### Level Creation Instruction File
-This is the input_file provided to bin/gen_levels.
+This is the input_file provided to bin/create_set<br>
 This file should contain the number of colors for the levels, followed by a space, then the number of levels you'd like to create with that number of colors, followed by a space or newline. <br>
 For example, if you want to create 5 levels with 2 colors and 10 levels with 3 colors, your input_file would need to be: <br>
  2 5 <br>
