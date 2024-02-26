@@ -11,9 +11,11 @@ I am currently working on displaying the game state with actual colors using jgr
 I am also leading a project to develop a mobile app implementation of the game with classmates at UTK, with an estimated completion date of April 15, 2024. Once we've gotten the app finished up and submitted our final report on the project, I will be able to make the mobile app files public.
 
 ## What is Color Sort?
-Color Sort is a puzzle game that starts with blocks of various colors shuffled up in bottles. You are given 1 empty bottle if there are 2 or 3 colors to be sorted and 2 empty bottles if there are 4+ colors.<br>
+Color Sort is a puzzle game that starts with blocks of various colors shuffled up in bottles. <br>
 
-The objective of the game is to sort all of the colors so that all blocks of the same color are in the same bottle.
+The objective of the game is to sort all of the colors so that all blocks of the same color are in the same bottle.<br>
+
+You will be given 1 empty bottle to start with if there are 2 or 3 colors to be sorted and 2 empty bottles if there are 4 or more colors.
 
 ## How to play Color Sort
 You can move the top-most color from one bottle to another bottle if: 
@@ -96,6 +98,6 @@ output_type: <br>
 #### Level Creation Instruction File
 This is the input_file provided to bin/gen_levels.
 This file should contain the number of colors for the levels, followed by a space, then the number of levels you'd like to create with that number of colors, followed by a space or newline. <br>
-For example, if you want to create 5 levels with 2 colors and 10 levels with 3 colors,your input_file would need to be: <br>
+For example, if you want to create 5 levels with 2 colors and 10 levels with 3 colors, your input_file would need to be: <br>
  2 5 <br>
  3 10
