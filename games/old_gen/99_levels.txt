@@ -1,0 +1,99 @@
+2 4 3 A A B B A B A B - - - -
+2 4 3 A B A A B B A B - - - -
+2 4 3 B B B A A B A A - - - -
+2 4 3 B B A A A A B B - - - -
+3 4 4 B B B C C A C C B A A A - - - -
+3 4 4 C B A C B C C A B A A B - - - -
+3 4 4 C B B A C C B A A A B C - - - -
+3 4 4 C B C B A C A A A C B B - - - -
+3 4 4 A A C C C B B B A C B A - - - -
+4 4 6 A D C D B C B A C D D A A C B B - - - - - - - -
+4 4 6 D A D C D B A B A D A B C C C B - - - - - - - -
+4 4 6 C D D C B B D A C D A B A B A C - - - - - - - -
+4 4 6 A C D C D A B C B A B D D C A B - - - - - - - -
+4 4 6 B D C D A C B A A C B D C D A B - - - - - - - -
+4 4 6 A D C D B B A A A C D B C B D C - - - - - - - -
+4 4 6 B C C A D A A B C D A C B B D D - - - - - - - -
+4 4 6 D B C B A B C D B D A A A C C D - - - - - - - -
+4 4 6 B B A B C D B A D D A C A C D C - - - - - - - -
+4 4 6 D D C B C C A B A B D B C D A A - - - - - - - -
+5 4 7 A C C B D C B A E B E A A C D D B D E E - - - - - - - -
+5 4 7 E D C B C E D E B E A A D B C A D A C B - - - - - - - -
+5 4 7 E A B D B C A D E C D C D B A B E C E A - - - - - - - -
+5 4 7 C E A E C B C A D D D D B C E A B A E B - - - - - - - -
+5 4 7 B C B D D C A B B E D A E A C A E D E C - - - - - - - -
+5 4 7 E A B C E B D D A C E A E D D B A B C C - - - - - - - -
+5 4 7 B C A E D B A C D E C A A E E C B D D B - - - - - - - -
+5 4 7 C B A B D C D E E E C A D A B D A C B E - - - - - - - -
+5 4 7 A D A D B E D E C E D C C C B B E A A B - - - - - - - -
+5 4 7 D C E A D B E B A C C A D E A D C E B B - - - - - - - -
+6 4 8 A E F A B D B E B A C E C D C D B F F C F D E A - - - - - - - -
+6 4 8 B D C D E C B F E B D A C E A B F F F C A A D E - - - - - - - -
+6 4 8 F A D D C B D D A B B F C E A F A E F E B C C E - - - - - - - -
+6 4 8 B A C D E F F A E B E B D F C A D D C A E C B F - - - - - - - -
+6 4 8 B A C B D C B B E D F C E A D A E F A F C E D F - - - - - - - -
+6 4 8 D C C E D B E E F D C A B A A B A C F F D E B F - - - - - - - -
+6 4 8 E F D D F C A E A D E C E C F A D B B B C A F B - - - - - - - -
+6 4 8 E B C A B C D E E F A B B E D D F A C C A F F D - - - - - - - -
+6 4 8 C D A D D F D F B B F B F A E E A A E C C B E C - - - - - - - -
+6 4 8 C D D D E B F B A A F B D E C F E B C A C E F A - - - - - - - -
+7 4 9 G F B F C C A F E E F C A A E D G C G D B D G E A B B D - - - - - - - -
+7 4 9 B C A B G D G D E G E F D F A F B C C D G C E B E A F A - - - - - - - -
+7 4 9 A D G B G A G C F G E C F E E E F B C F B A D D C D B A - - - - - - - -
+7 4 9 A B B G D G E E B G A F C F A F C C D G C D A D F B E E - - - - - - - -
+7 4 9 B G F D B F B C C B E A G G G E A A D E A F E D C C D F - - - - - - - -
+7 4 9 B E E F A C A C A G D F B E F G E F B C C G D D D G A B - - - - - - - -
+7 4 9 G D B D B F G E C D B F E F A E C G C A C D E F A B A G - - - - - - - -
+7 4 9 B F E E F C D E B A F G B C G A D C C G B A E D G D F A - - - - - - - -
+7 4 9 F E G C D D C D F E B G B B A C C E D F A B A G G E F A - - - - - - - -
+7 4 9 E A C E F B B G A D C D A C F B F C F E D E G G D G A B - - - - - - - -
+8 4 10 D B G E A A G A D G H H F F G E E B E B C C D B H F H D C A F C - - - - - - - -
+8 4 10 E G D E B B F C A H D A F G G F H H G B A H F B C C E A D D C E - - - - - - - -
+8 4 10 B B E F C C F G H E F B F D B H D D H C E H G E G A A C A D G A - - - - - - - -
+8 4 10 G C D D B C C F A A H G G D F H E B H F G B D F H E C A E A E B - - - - - - - -
+8 4 10 H F A G H C A A H B G E D F G E F E D H F A B B C C B E C D D G - - - - - - - -
+8 4 10 A D A C F D E D B G A G E B F H H E H C G C H B F A E G C B D F - - - - - - - -
+8 4 10 H H B G F E C C E D A A F C G B B D G A A B H E C H D F G D F E - - - - - - - -
+8 4 10 H F F B C A H F E D A A A H G G C B G B E D H F E E B C C G D D - - - - - - - -
+8 4 10 F B A E H B B G H F D C D E F H H A C C A F B D C A E G G E G D - - - - - - - -
+8 4 10 C E G E F C G E G B B D B A H H H G F C D A D E D F A A C H B F - - - - - - - -
+9 4 11 G E F A I B I C H A E I C F A E A B G H B D B D F D G G C F I D H E C H - - - - - - - -
+9 4 11 D F D H E C H B A I A A I G G B C D G I C I H B B E C D H A E E F G F F - - - - - - - -
+9 4 11 B I C A B B H D F E A I A H C C F F D D E B G I D H G I E G A C H F E G - - - - - - - -
+9 4 11 A G I G E B C I D C D I E B H C F F E G A H I F B D H H D C A F B G A E - - - - - - - -
+9 4 11 A D G C F A G I H H D A B I H E C F H A E C B F I F B E G B I D G D C E - - - - - - - -
+9 4 11 I A I H A C B B H B A G B E E C F F I C G E E C F D D I D A H G F G D H - - - - - - - -
+9 4 11 C A A I H B F G I D G G C D I H C F F A I F E B D B H E B C G E H E D A - - - - - - - -
+9 4 11 A A G H D A E D D I E C F G H B C B B B F C E I H I A I F F G G C D H E - - - - - - - -
+9 4 11 H H G E F H B A G D A F H C A E B G E A G B E I D C I D F B F C I D I C - - - - - - - -
+9 4 11 G A D A E E C A H A C B G C F H B F I D C G H H I D I F B I G D E F B E - - - - - - - -
+10 4 12 C F D B C H J H G B G A B C I C B F F D E J A A H J D I G J F E D A E I E G H I - - - - - - - -
+10 4 12 I H C H E A G J I B I B F E H I F J A J G G A D B E F A C C H F D G B D J E D C - - - - - - - -
+10 4 12 A B J G B A F B C E E C A F D J A D H H E F D H C I D H J E I G J F G I G C I B - - - - - - - -
+10 4 12 D E E C J J C G D F D E G I A F B C I H I E A B H J A H B G B A C I D G F F J H - - - - - - - -
+10 4 12 J B D I G C D C J D F A E F B G I I J H A H I C H E E D E H F C J G B A A G B F - - - - - - - -
+10 4 12 G I E I E J D H G B G J I J F B J F C D H H F F A C A E A G D A I C B H D E B C - - - - - - - -
+10 4 12 I B F J B G D E D E J C G G F J A J C H C I C D H D F B I E A I A E H F A B H G - - - - - - - -
+10 4 12 C F E D H A B I J E J D J C B C I E D G J H B I A G A H B D C A H F E G F F G I - - - - - - - -
+10 4 12 A E G H C B D F G D B C A J J D B I J H F E D F B F H C H G G C A I E E I A J I - - - - - - - -
+10 4 12 A B E J I D D E H I B D E A I C A D J F F E G G G F H J B H C H F C J B I G C A - - - - - - - -
+11 4 13 C I E G K B I B C A E I D J F H J A A D J K F F F A B K D G B I G H G C E H H K E D J C - - - - - - - -
+11 4 13 H J C B K H G H G A C B J F K C A G D I I E F G F C A J B K H F B E D K D E D I E J A I - - - - - - - -
+11 4 13 I F F K F A E H J D F D E B I H J E A C G H I D A J J E B G C K I D K C G H B C G K A B - - - - - - - -
+11 4 13 D F J H D C A E E I B H I J E G G A E C C D B I H K G K A H F A J F J G B C D B K F I K - - - - - - - -
+11 4 13 C H B A K D C F A C E A B D B I G F J J D I K G B H H K K C E G E E G H D J I I J F A F - - - - - - - -
+11 4 13 F J D I K B D F H F C K C J E I B C A K H C G B A G H J D K B J E A I F G A D G E I H E - - - - - - - -
+11 4 13 C F D C A D F J J H F K J D C H A E B K G I B F I E G E C H G I A I A G K H B K J D B E - - - - - - - -
+11 4 13 H E I D A G K A D B I B C E K J E J F D B G C K H F D F J G I J A K C H C A F E B H I G - - - - - - - -
+11 4 13 A I D C J J H K B H B D F K F C I F J A A E J I G H H E E E B A K F G C B I C G G K D D - - - - - - - -
+11 4 13 I H H K G C E D C C K D B A A D F G F C B J A F J I I J D G I E K K G B H H F E E B J A - - - - - - - -
+12 4 14 D I J L H E F A G K H I J L H C G L E A D K F F I I B H K E J C G D B E A F B A L D C G K B C J - - - - - - - -
+12 4 14 E H L A J I K F E K J D F D G J F H E L C F H C J K I E A G D A G L H B I B C C D I A B L G K B - - - - - - - -
+12 4 14 L H C F H L J B A K E F B E F H D F I G E C A D L E G A I B I D H C J D L K K K I A B C G J J G - - - - - - - -
+12 4 14 H G J D C E B A G F H C K I I A J F L G F K L C B J G E H I B F E K K L J D D H C B E D L A I A - - - - - - - -
+12 4 14 J E C L K A B J I D D C I A C K G L L G E B D J I L J F F B G H F E D B H E C H K G F A I K A H - - - - - - - -
+12 4 14 C F K E L E J E G K A D K H G L B H I I A A L C K D H C E B J F D F F B H L J G B I J D C A G I - - - - - - - -
+12 4 14 H H I B F I I G A C J G K D A F L E A C E D B D E F J B I D A L J K G L L H H F K C B C E G K J - - - - - - - -
+12 4 14 F I D C A L A C B G H L A I L K K F K H K E F C J D B G E J J B E G D I J L B H G A F H D E C I - - - - - - - -
+12 4 14 I D G E A G D A K B H J F F K K I L I F E A J A L B H J C E C E I J C B F D G K H G L D B C H L - - - - - - - -
+12 4 14 E B K B L H B I A C K A C F E F H D H I C F J E D D K L G J F G J E D L G C I J K A H G B I A L - - - - - - - -

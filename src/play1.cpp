@@ -55,17 +55,17 @@ int main(int argc, char *argv[]) {
     }
 
     // Load level
-    getline(level_file, level);
     if (!game->load_level(level)){
         cerr << "Could not load level.\n";
         return -1;
     }
     level_file.close();
 
+    cout << "loaded the level." << endl;
     // Play level
     game->print_msg_file(WELCOME_MSG);
     while (game->level_complete() == false){
-        
+        cout << "in the while loop" << endl;
         game->print_bottles();
         
         cin.clear();

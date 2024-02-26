@@ -52,7 +52,8 @@ int main(int argc, char *argv[]){
     ofstream game_file;              // File for all level data, if writing all levels to 1 file
     ofstream level_file;             // File for individual level
     string level_filename;           // Filename for individual level file
-    string dir_name;                 // Name for directory being created
+    string level_files_dir;          // Directory to put the individual level files into
+    string games_dir;                // Directory to put file that contains all level data
 
 
     // Print instructions if given bad command line args
@@ -69,23 +70,23 @@ int main(int argc, char *argv[]){
     // Open directory for output files
     // Make sure level_files directory exists, and create it if necessary
     if (output_type == "d" || output_type == "b"){
-        dir_name = "level_files";
-        dir = opendir(dir_name.c_str());
+        level_files_dir = "level_files";
+        dir = opendir(level_files_dir.c_str());
 
         if (!dir){
-            if (mkdir(dir_name.c_str(), 0700) == -1){
-                cerr << dir_name << ": " << strerror(errno) << endl;
+            if (mkdir(level_files_dir.c_str(), 0700) == -1){
+                cerr << level_files_dir << ": " << strerror(errno) << endl;
                 return -1;
             } 
         } 
         closedir(dir);
 
         // Create directory for levels if it doesn't already exist
-        dir_name = "level_files/" + game_name;
-        dir = opendir(dir_name.c_str());
+        level_files_dir = "level_files/" + game_name;
+        dir = opendir(level_files_dir.c_str());
         if (!dir){
-            if (mkdir(dir_name.c_str(), 0700) == -1){
-                cerr << dir_name << ": " << strerror(errno) << endl;
+            if (mkdir(level_files_dir.c_str(), 0700) == -1){
+                cerr << level_files_dir << ": " << strerror(errno) << endl;
                 return -1;
             } 
         } 
@@ -101,19 +102,19 @@ int main(int argc, char *argv[]){
             game_name += ".txt";
         }
         
-        dir_name = "games";
-        dir = opendir(dir_name.c_str());
+        games_dir = "games";
+        dir = opendir(games_dir.c_str());
 
         if (!dir){
-            if (mkdir(dir_name.c_str(), 0700) == -1){
-                cerr << dir_name << ": " << strerror(errno) << endl;
+            if (mkdir(games_dir.c_str(), 0700) == -1){
+                cerr << games_dir << ": " << strerror(errno) << endl;
                 return -1;
             } 
         } 
         closedir(dir);
 
 
-        game_name = dir_name + "/" + game_name;
+        game_name = games_dir + "/" + game_name;
         game_file.open(game_name);
         if (game_file.fail()){
             cerr << game_name << ": " << strerror(errno) << endl;
@@ -144,7 +145,7 @@ int main(int argc, char *argv[]){
 
             // Write level data to individual file if requested
             if (output_type == "d" || output_type == "b"){            
-                level_filename = dir_name + "/" + to_string(num_colors) + "_" + to_string(i+1) + ".txt";
+                level_filename = level_files_dir + "/" + to_string(num_colors) + "_" + to_string(i+1) + ".txt";
                 level_file.open(level_filename);
                 if (level_file.fail()){
                     cerr << "Could not create level file " << level_filename << endl;
@@ -170,7 +171,7 @@ int main(int argc, char *argv[]){
     }
 
     if (output_type == "d" || output_type == "b"){
-        cout << "Individual game files are located in " << dir_name << endl;
+        cout << "Individual game files are located in " << level_files_dir << endl;
     }
 
     input_file.close();
