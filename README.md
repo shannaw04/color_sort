@@ -43,7 +43,7 @@ You can move the top A in bottle 1 to bottle 3, then the B in bottle 1 to bottle
 
 ## How to Run the Game:
 #### Create Executables
-There is a makefile included that compiles the executables on Hydra, so just enter "make" in the cpp_ver directory to create your executables. They will be placed in the "bin" directory. 
+There is a makefile included that compiles the executables with GCC, so just enter "make" in the cpp_ver directory to create your executables. They will be placed in the "bin" directory (you may need to create a bin directory first).
 
 #### Start the Game
 To start the Color Sort game, enter the following command from your cpp_ver directory:<br>
