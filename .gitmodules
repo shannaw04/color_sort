@@ -1,0 +1,6 @@
+[submodule "color_sort_jgraph"]
+	path = jgraph
+	url = git@github.com:shannaw04/color_sort_jgraph.git
+[submodule "color_sort"]
+	path = godot
+	url = git@github.com:cs340-24/color_sort.git
