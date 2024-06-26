@@ -1,29 +1,36 @@
 # COLOR SORT!
-A series of ongoing projects to learn mobile app and web development by implementing the puzzle game Color Sort<br><br>
+A series of ongoing projects to learn mobile app, video game, and web development through implementation of the puzzle game Color Sort<br>
+
 [Unfamiliar with Color Sort? Click here for more information](#what-is-color-sort)<br>
 
+Developed by Shanna Wallace, unless otherwise noted. <br>
+Updated: 6/25/2024
+
 ## Project Contents:
-### [c++](https://github.com/shannaw04/color_sort/tree/main/c%2B%2B): &nbsp; Winter - Spring 2024 
+### [c++](https://github.com/shannaw04/color_sort/tree/main/c%2B%2B): 
 * Basic version of Color Sort written in C++ 
 * Takes input from command line and prints the game display in ASCII art, using letters to represent colors
-* Level generator program to create random levels
+* Level generator program to create random levels<br>
+![c++](img/initial.png)
+### [Jgraph](https://github.com/shannaw04/color_sort_jgraph/tree/fe5ff2453d1089a2ee664c1dc28ccedf509386b4): 
+* Uses [Dr. James Plank's Jgraph program](https://web.eecs.utk.edu/~jplank/plank/jgraph/jgraph.html) to create a colorful jpg of the game board after each move<Br>
+![jgraph](img/jgraph.jpg)
 
-### [Jgraph](https://github.com/shannaw04/color_sort_jgraph/tree/fe5ff2453d1089a2ee664c1dc28ccedf509386b4): &nbsp; Spring 2024
-* Uses [Dr. James Plank's Jgraph program](https://web.eecs.utk.edu/~jplank/plank/jgraph/jgraph.html) to create a colorful jpg of the game board after each move
-
-### [Godot](https://github.com/cs340-24/color_sort/tree/e36a80262ff33a3144d8b7034370c7072463be76): &nbsp; Spring 2024
+### [Godot](https://github.com/cs340-24/color_sort/tree/e36a80262ff33a3144d8b7034370c7072463be76): 
 * Managed a group project to create a Color Sort mobile app with classmates at UTK 
 * Built using Godot Engine and GDScript
 * Game runs correctly on Godot's emulator. APK will launch welcome screen on Android devices, but fails to load level data
-* <u>Features:</u>
+* Features:
    * Welcome screen
-   * Background music & sound effects
-   * Animations
-   * Help screen with gameplay instructions
-   * Ability to undo moves and reset levels 
-   * Challenge mode that masks some colors for added difficulty 
+   * Background music & sound effects: [(Landon Boone)](https://github.com/landon-boone2001)
+   * Animations: [(Logan Lett)](https://github.com/10-Squares)
+   * Help screen with gameplay instructions: [(Logan Lett)](https://github.com/10-Squares)
+   * Ability to reset levels
+   * Ability to undo moves: [(Coleman Oates)](https://github.com/coates4)
+   * Challenge mode that masks some colors for added difficulty <br>
+![godot](img/godot.png)
 
-### [Kotlin]():  &nbsp; &nbsp; Summer 2024
+### [Kotlin]():
 * Developing an Android Color Sort app using Android Studio and Kotlin
 
 ## Future Plans / Works in Progress:
