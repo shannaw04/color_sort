@@ -3,7 +3,7 @@ A series of ongoing projects to learn mobile app and web development by implemen
 [Unfamiliar with Color Sort? Click here for more information](#what-is-color-sort?)<br>
 
 ## Project Contents:
-* **<u>[C++](https://github.com/shannaw04/color_sort/tree/main/cpp):**</u> [Winter - Spring 2024] :
+* **<u>[c++](https://github.com/shannaw04/color_sort/tree/main/cpp):**</u> [Winter - Spring 2024] :
     * Basic version of Color Sort written in C++ 
     * Takes input from command line and prints the game display in ASCII art, using letters to represent colors
     * Level generator program to create random levels
