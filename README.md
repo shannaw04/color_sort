@@ -3,32 +3,32 @@ A series of ongoing projects to learn mobile app and web development by implemen
 [Unfamiliar with Color Sort? Click here for more information](#what-is-color-sort?)<br>
 
 ## Project Contents:
-### ++[c++](https://github.com/shannaw04/color_sort/tree/main/cpp):++
+### [c++](https://github.com/shannaw04/color_sort/tree/main/cpp):
 Winter - Spring 2024 
-    * Basic version of Color Sort written in C++ 
-    * Takes input from command line and prints the game display in ASCII art, using letters to represent colors
-    * Level generator program to create random levels
+* Basic version of Color Sort written in C++ 
+* Takes input from command line and prints the game display in ASCII art, using letters to represent colors
+* Level generator program to create random levels
 
-### <u>[Jgraph](https://github.com/shannaw04/color_sort_jgraph/tree/fe5ff2453d1089a2ee664c1dc28ccedf509386b4)</u>: 
+### [Jgraph](https://github.com/shannaw04/color_sort_jgraph/tree/fe5ff2453d1089a2ee664c1dc28ccedf509386b4): 
 Spring 2024
-    * Uses [Dr. James Plank's Jgraph program](https://web.eecs.utk.edu/~jplank/plank/jgraph/jgraph.html) to create a colorful jpg of the game board after each move
+* Uses [Dr. James Plank's Jgraph program](https://web.eecs.utk.edu/~jplank/plank/jgraph/jgraph.html) to create a colorful jpg of the game board after each move
 
-### <u>[Godot](https://github.com/cs340-24/color_sort/tree/e36a80262ff33a3144d8b7034370c7072463be76)</u>:
+### [Godot](https://github.com/cs340-24/color_sort/tree/e36a80262ff33a3144d8b7034370c7072463be76):
 Spring 2024
-    * Managed a group project to create a Color Sort mobile app with classmates at UTK 
-    * Built using Godot Engine and GDScript
-    * Game runs correctly on Godot's emulator. APK will launch welcome screen on Android devices, but fails to load level data
-    * <u>Features:</u>
-         * Welcome screen
-         * Background music & sound effects
-         * Animations
-         * Help screen with gameplay instructions
-         * Ability to undo moves and reset levels 
-        * Challenge mode that masks some colors for added difficulty 
+* Managed a group project to create a Color Sort mobile app with classmates at UTK 
+* Built using Godot Engine and GDScript
+* Game runs correctly on Godot's emulator. APK will launch welcome screen on Android devices, but fails to load level data
+* <u>Features:</u>
+   * Welcome screen
+   * Background music & sound effects
+   * Animations
+   * Help screen with gameplay instructions
+   * Ability to undo moves and reset levels 
+   * Challenge mode that masks some colors for added difficulty 
 
-### <u>[Kotlin]()</u>:
+### [Kotlin]():
 Summer 2024
-    * Developing an Android Color Sort app using Android Studio and Kotlin
+* Developing an Android Color Sort app using Android Studio and Kotlin
 
 ## Future Plans / Works in Progress:
 * Create Color Sort web page that will run the game and display the Jgraph-generated jpg after each move
