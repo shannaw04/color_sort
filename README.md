@@ -3,17 +3,17 @@ A series of ongoing projects to learn mobile app and web development by implemen
 [Unfamiliar with Color Sort? Click here for more information](#what-is-color-sort?)<br>
 
 ## Project Contents:
-###<u>[c++](https://github.com/shannaw04/color_sort/tree/main/cpp):</u> 
+### <u>[c++](https://github.com/shannaw04/color_sort/tree/main/cpp):</u> 
 Winter - Spring 2024 
     * Basic version of Color Sort written in C++ 
     * Takes input from command line and prints the game display in ASCII art, using letters to represent colors
     * Level generator program to create random levels
 
-###<u>[Jgraph](https://github.com/shannaw04/color_sort_jgraph/tree/fe5ff2453d1089a2ee664c1dc28ccedf509386b4)</u>: 
+### <u>[Jgraph](https://github.com/shannaw04/color_sort_jgraph/tree/fe5ff2453d1089a2ee664c1dc28ccedf509386b4)</u>: 
 Spring 2024
     * Uses [Dr. James Plank's Jgraph program](https://web.eecs.utk.edu/~jplank/plank/jgraph/jgraph.html) to create a colorful jpg of the game board after each move
 
-###<u>[Godot](https://github.com/cs340-24/color_sort/tree/e36a80262ff33a3144d8b7034370c7072463be76)</u>:
+### <u>[Godot](https://github.com/cs340-24/color_sort/tree/e36a80262ff33a3144d8b7034370c7072463be76)</u>:
 Spring 2024
     * Managed a group project to create a Color Sort mobile app with classmates at UTK 
     * Built using Godot Engine and GDScript
@@ -26,7 +26,7 @@ Spring 2024
          * Ability to undo moves and reset levels 
         * Challenge mode that masks some colors for added difficulty 
 
-###<u>[Kotlin]()</u>:
+### <u>[Kotlin]()</u>:
 Summer 2024
     * Developing an Android Color Sort app using Android Studio and Kotlin
 
