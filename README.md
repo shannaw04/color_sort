@@ -1,9 +1,6 @@
 # COLOR SORT!
-A series of ongoing projects to learn mobile app and web development by implementing the puzzle game Color Sort<br>
+A series of ongoing projects to learn mobile app and web development by implementing the puzzle game Color Sort<br><br>
 [Unfamiliar with Color Sort? Click here for more information](#what-is-color-sort?)<br>
-
-
-
 
 ## Project Contents:
 * **<u>[C++](https://github.com/shannaw04/color_sort/tree/main/cpp):**</u> [Winter - Spring 2024] :
