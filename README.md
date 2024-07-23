@@ -4,7 +4,7 @@ A series of ongoing projects to learn mobile app, video game, and web developmen
 [Unfamiliar with Color Sort? Click here for more information](#what-is-color-sort)<br>
 
 Developed by Shanna Wallace, unless otherwise noted. <br>
-Updated: 6/25/2024
+Updated: 7/23/2024
 
 ## Project Contents:
 ### [c++](https://github.com/shannaw04/color_sort/tree/main/c%2B%2B): 
@@ -19,28 +19,19 @@ Updated: 6/25/2024
 ### [Godot](https://github.com/cs340-24/color_sort/tree/e36a80262ff33a3144d8b7034370c7072463be76): 
 * Managed a group project to create a Color Sort mobile app with classmates at UTK 
 * Built using Godot Engine and GDScript
-* Game runs correctly on Godot's emulator. APK will launch welcome screen on Android devices, but fails to load level data
+* Game currently only runs on Godot's emulator
 * Features:
    * Welcome screen
-   * Background music & sound effects: [(Landon Boone)](https://github.com/landon-boone2001)
-   * Animations: [(Logan Lett)](https://github.com/10-Squares)
-   * Help screen with gameplay instructions: [(Logan Lett)](https://github.com/10-Squares)
+   * Background music & sound effects
+   * Animations
+   * Help screen with gameplay instructions
    * Ability to reset levels
-   * Ability to undo moves: [(Coleman Oates)](https://github.com/coates4)
+   * Ability to undo moves
    * Challenge mode that masks some colors for added difficulty <br>
 ![godot](img/godot.png)
 
-### [Kotlin]():
-* Developing an Android Color Sort app using Android Studio and Kotlin
-
-## Future Plans / Works in Progress:
-* Create Color Sort web page that will run the game and display the Jgraph-generated jpg after each move
-* Functional APK of Godot version
-* Fully operational Android and iOS Color Sort mobile app
-* Add ability to save and reload game progress
-* Add option to select difficulty level
-* Create a tutorial level
-* Improvements to level generator
+### [React Native]():
+* Currently developing a cross-platform Color Sort app using React Native
 
 ## What is Color Sort?
 Color Sort is a puzzle game that starts with blocks of various colors shuffled up in bottles. <br>
